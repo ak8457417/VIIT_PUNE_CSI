@@ -1,0 +1,117 @@
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+/*#E86B11 and #092040*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    overflow: hidden; /* Prevents wrapping issues */
+}
+
+.nav-connect {
+    margin-left: 2rem;
+}
+
+.nav-logo img {
+    height: 5rem;
+    align-self: center;
+    transition: 0.5s;
+}
+
+.nav-logo img:hover {
+    transform: scale(1.05); /* Slight pop effect */
+}
+
+.nav-connect {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.nav-mob-close {
+    display: none;
+}
+
+.nav-mob-open {
+    display: none;
+}
+
+.fa-solid {
+    font-size: 1.5rem !important;
+}
+
+@media (max-width: 768px) {
+    .nav-connect {
+        display: none;
+    }
+    .nav-mob-open {
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+    .nav-mob-close {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+    }
+    .nav-menu {
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: #1f0016;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+    .nav-menu li {
+        font-size: 25px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
