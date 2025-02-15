@@ -13,31 +13,17 @@
     letter-spacing: 2px;
 }
 
-/* Slider Wrapper */
-.sponsor-slider {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    padding: 2rem 1rem;
-}
-
-/* The Moving Track - Smooth Infinite Scroll */
-.sponsor-track {
+.cards-sponsor {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     gap: 2rem;
-    width: max-content; /* Adjust width dynamically */
-    animation: scrollSponsors 20s linear infinite;
-}
-
-/* Responsive Speed & Pause Effect */
-.sponsor-track:hover {
-    animation-play-state: paused; /* Stops scrolling when hovered */
 }
 
 /* Sponsor Card - Gradient Glassmorphism */
 .sponsor-card {
-    height: 10rem;
+    height: 7rem;
     width: 9rem;
     background: linear-gradient(267deg, rgba(218, 124, 37, 0.15) 0.36%, rgba(185, 35, 225, 0.15) 102.06%);
     backdrop-filter: blur(15px); /* Stronger glass effect */
@@ -89,15 +75,15 @@
     transform: scale(1.1);
 }
 
-/* Infinite Scrolling Animation */
-@keyframes scrollSponsors {
-    from {
-        transform: translateX(0%);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
+/*!* Infinite Scrolling Animation *!*/
+/*@keyframes scrollSponsors {*/
+/*    from {*/
+/*        transform: translateX(0%);*/
+/*    }*/
+/*    to {*/
+/*        transform: translateX(-50%);*/
+/*    }*/
+/*}*/
 
 /* For smaller tablets and large mobiles (width < 768px) */
 @media (max-width: 768px) {
@@ -117,18 +103,18 @@
         margin-bottom: 1.5rem;
     }
 
-    .sponsor-slider {
-        padding: 1.5rem 0.5rem;
-    }
+    /*.sponsor-slider {*/
+    /*    padding: 1.5rem 0.5rem;*/
+    /*}*/
 
-    .sponsor-track {
-        gap: 1rem; /* Reduce gap between sponsor cards */
-        animation-duration: 15s; /* Faster scrolling */
-    }
+    /*.sponsor-track {*/
+    /*    gap: 1rem; !* Reduce gap between sponsor cards *!*/
+    /*    animation-duration: 15s; !* Faster scrolling *!*/
+    /*}*/
 
     .sponsor-card {
-        height: 8rem;
-        width: 7rem;
+        height: 5rem;
+        width: 8rem;
         padding: 0.3rem;
     }
 
@@ -138,40 +124,53 @@
     }
 }
 
-/* For mobiles (width < 480px) */
+
 @media (max-width: 480px) {
     .sponsor-title {
         font-size: 1.8rem !important;
         margin-bottom: 1rem;
     }
 
-    .sponsor-slider {
-        padding: 1rem 0.5rem;
-    }
+    /*.sponsor-slider {*/
+    /*    padding: 1rem 0.5rem;*/
+    /*}*/
 
-    .sponsor-track {
-        gap: 0.8rem;
-        animation-duration: 12s;
-    }
+    /*.sponsor-track {*/
+    /*    gap: 0.8rem;*/
+    /*    animation-duration: 12s;*/
+    /*}*/
 
     .sponsor-card {
         height: 6rem;
-        width: 5.5rem;
-        padding: 0.2rem;
-        border-radius: 8px;
+        width: 9rem;
+        /*padding: 0.2rem;*/
+        /*border-radius: 8px;*/
     }
 
     .sponsor-card img {
-        width: 70%;
-        height: 70%;
+        width: 80%;
+        height: 80%;
+    }
+
+    /*.sponsor-track {*/
+    /*    gap: 0.8rem;*/
+    /*    animation: scrollSponsors 15s linear infinite; !* Ensure animation is applied *!*/
+    /*}*/
+
+    .cards-sponsor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
     }
 }
 
 /* For very large screens (width > 1440px) */
 @media (min-width: 1440px) {
-    .sponsor-track {
-        animation-duration: 25s; /* Slower scrolling */
-    }
+    /*.sponsor-track {*/
+    /*    animation-duration: 25s; !* Slower scrolling *!*/
+    /*}*/
 
     .sponsor-card {
         height: 12rem;
@@ -183,3 +182,4 @@
         height: 85%;
     }
 }
+

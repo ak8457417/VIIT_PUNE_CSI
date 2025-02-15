@@ -130,3 +130,68 @@
         display: none;
     }
 }
+
+@media (max-width: 480px) {
+    .timeline-container {
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 0;
+    }
+
+    .timeline-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .timeline-item {
+        display: block; /* Stack items in a column */
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .timeline-content {
+        padding: 0.8rem;
+        background: #222;
+        border-radius: 8px;
+        box-shadow: none;
+        text-align: left;
+    }
+
+    .timeline-heading {
+        font-size: 1.1rem;
+    }
+
+    .timeline-time {
+        font-size: 0.9rem;
+        color: #ffa502;
+    }
+
+    .timeline-desc {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* Completely remove icons and separators */
+    .timeline-separator,
+    .timeline-dot,
+    .timeline-connector {
+        display: none !important;
+    }
+
+    /* Remove all animations & effects */
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+
+    .timeline-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .timeline-content:hover {
+        transition: none !important;
+        translate: none !important;
+    }
+}

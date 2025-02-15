@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -19,8 +19,10 @@
     "@mui/lab": "^6.0.0-beta.26",
     "@mui/material": "^6.4.3",
     "@tailwindcss/vite": "^4.0.5",
+    "lucide-react": "^0.475.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-rewards": "^2.1.0",
     "tailwindcss": "^4.0.5"
   },
   "devDependencies": {

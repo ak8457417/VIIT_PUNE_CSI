@@ -58,3 +58,23 @@
     }
 
 }
+
+@media (max-width: 400px) {
+    .gallery {
+        margin: 30px;
+    }
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Show 1 image per row */
+        gap: 8px;
+    }
+
+    .gallery-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .xyz {
+        display: none;
+    }
+}

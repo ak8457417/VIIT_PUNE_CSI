@@ -36,9 +36,7 @@ const Navbar = () => {
                     <img src={logo} alt="logo" style={{ cursor: "pointer" }}/>
                 </a>
             </div>
-            <i className="fa-solid fa-bars nav-mob-open" onClick={openMenu}></i>
             <ul ref={menuRef} className="nav-menu">
-                <i class="fa-solid fa-xmark nav-mob-close" onClick={closeMenu}></i>
                 <li><a className='anchor-link' href='#xhome'><p onClick={() => setMenu('xhome')}>Home</p></a></li>
                 <li><a className="anchor-link" href="#xabout"><p onClick={() => setMenu("xabout")}>About</p></a></li>
                 <li><a className="anchor-link" href="#xgallery"><p onClick={() => setMenu("xgallery")}>Services</p></a></li>

@@ -26,7 +26,7 @@ const Gallery = () => {
                 <img src={one} alt={'image'}/>
                 <img src={two} alt={'image'}/>
                 <img src={seven} alt={'image'}/>
-                <img src={three} alt={'image'}/>
+                <img src={three} alt={'image'} className={"xyz"}/>
                 <img src={six} alt={'image'}/>
                 <img src={four} alt={'image'}/>
             </div>

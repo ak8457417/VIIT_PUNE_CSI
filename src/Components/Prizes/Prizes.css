@@ -1,0 +1,78 @@
+.prizes {
+    text-align: center;
+    padding: 20px;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.prizes-title h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.prizes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.prize-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.prize-card:hover {
+    transform: scale(1.05);
+}
+
+.prize-logo {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.prize-price {
+    /*font-size: 18px;*/
+    font-weight: bold;
+    color: #555;
+    margin: 10px 0;
+}
+
+.prize-features {
+    list-style: none;
+    padding: 0;
+}
+
+.prize-features li {
+    margin: 5px 0;
+}
+
+
+@media screen and (max-width: 480px) {
+    .prizes-title h1 {
+        font-size: 50px;
+    }
+
+    .prizes-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .prize-card {
+        width: 200px;
+    }
+}

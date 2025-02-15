@@ -94,3 +94,15 @@
         margin-top: 10px;
     }
 }
+
+@media (max-width: 400px) {
+    .footer-bottom-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-subscribe {
+        padding: 1rem 1rem;
+    }
+}
